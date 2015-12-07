@@ -2,10 +2,10 @@
 A SystemJS hot module replacer to loads file changes without full page refreshes.
 
 
-`npm install --save-dev systemjs-automagic-server`
+`npm install --save-dev automagic-systemjs-server`
 
 ```
-var automagic = require('systemjs-automagic-server');
+var automagic = require('automagic-systemjs-server');
 automagic.init(options);
 ```
 
