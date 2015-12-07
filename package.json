@@ -1,27 +1,27 @@
 {
-  "name": "systemjs-hot-loader",
-  "version": "1.0.2",
-  "description": "Loads file changes without full page refreshes in the browser",
+  "name": "systemjs-automagic-server",
+  "version": "1.0.0",
+  "description": "A SystemJS hot module replacer to loads file changes without full page refreshes.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aTable/systemjs-hot-loader.git"
+    "url": "git+https://github.com/aTable/systemjs-automagic-server.git"
   },
   "keywords": [
     "systemjs",
-    "hot-load",
+    "hot module replacement",
     "browser",
     "websockets"
   ],
   "author": "aTable",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aTable/systemjs-hot-loader/issues"
+    "url": "https://github.com/aTable/systemjs-automagic-server/issues"
   },
-  "homepage": "https://github.com/aTable/systemjs-hot-loader#readme",
+  "homepage": "https://github.com/aTable/systemjs-automagic-server#readme",
   "devDependencies": {
     "socket.io": "^1.3.7"
   }
