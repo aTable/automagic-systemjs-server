@@ -1,12 +1,12 @@
-# systemjs-hot-loader
-Loads file changes without full page refreshes
+# automagic
+A SystemJS hot module replacer to loads file changes without full page refreshes.
 
 
-`npm install --save-dev systemjs-hot-loader`
+`npm install --save-dev systemjs-automagic-server`
 
-`var systemJsHotLoader = require('systemjs-hot-loader');`
+`var automagic = require('systemjs-automagic-server');`
 
-`systemJsHotLoader.init(options);`
+`automagic.init(options);`
 
 
 ```
@@ -18,6 +18,8 @@ gulp.watch(['*.js', '!node_modules/**'])
             io.emit('fileChanged', data);
         });
 ```
+
+
 
 
 Work in progress
