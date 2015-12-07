@@ -21,6 +21,7 @@ gulp.watch(['*.js', '!node_modules/**'])
 ```
 
 
+//TODO: Add recursive dependency replacement
 
 
 Work in progress
