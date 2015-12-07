@@ -20,6 +20,8 @@ gulp.watch(['*.js', '!node_modules/**'])
         });
 ```
 
+<a target='_blank' href='http://i.imgur.com/2eKyLKf.gifv'>See it in action </a>
+
 
 //TODO: Add recursive dependency replacement
 
