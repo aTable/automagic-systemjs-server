@@ -23,7 +23,9 @@ gulp.watch(['*.js', '!node_modules/**'])
 
 ####Client
 `jspm install npm:automagic-systemjs-client`
+
 `System.trace = true;`
+
 ```
 import automagic from 'automagic-systemjs-client';
 automagic.baseUri = 'Scripts/';
