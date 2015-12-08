@@ -1,7 +1,8 @@
 # automagic
-A SystemJS hot module replacer to loads file changes without full page refreshes.
+A SystemJS hot module replacer to loads file changes <a target='_blank' href='http://i.imgur.com/2eKyLKf.gifv'>without full page refreshes.</a>
 
-
+###Instructions
+####Server
 `npm install --save-dev automagic-systemjs-server`
 
 ```
@@ -20,5 +21,15 @@ gulp.watch(['*.js', '!node_modules/**'])
         });
 ```
 
-<a target='_blank' href='http://i.imgur.com/2eKyLKf.gifv'>See it in action </a>
+####Client
+`jspm install npm:automagic-systemjs-client`
+`System.trace = true;`
+```
+import automagic from 'automagic-systemjs-client';
+automagic.baseUri = 'Scripts/';
+automagic.port = 3912;
+automagic.init();
+```
+
+
 
