@@ -1,6 +1,6 @@
 {
-  "name": "systemjs-automagic-server",
-  "version": "1.0.0",
+  "name": "automagic-system-server",
+  "version": "1.0.1",
   "description": "A SystemJS hot module replacer to loads file changes without full page refreshes.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aTable/systemjs-automagic-server.git"
+    "url": "git+https://github.com/aTable/automagic-systemjs-server.git"
   },
   "keywords": [
     "systemjs",
@@ -19,9 +19,9 @@
   "author": "aTable",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aTable/systemjs-automagic-server/issues"
+    "url": "https://github.com/aTable/automagic-systemjs-server/issues"
   },
-  "homepage": "https://github.com/aTable/systemjs-automagic-server#readme",
+  "homepage": "https://github.com/aTable/automagic-systemjs-server#readme",
   "devDependencies": {
     "socket.io": "^1.3.7"
   }
