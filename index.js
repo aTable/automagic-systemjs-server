@@ -9,15 +9,13 @@ function handler(req, res) {
     res.end(message);
 }
 
-var socketGroupingKey = 'systemjs-dev-server';
-
 exports.init = function (options) {
     var port = options.port || 3000;
+    var origins = options.origins || '*:*';
     var newConnectionCallback = options.newConnectionCallback || function (socket) {
         console.log('new connection', new Date());
-        //socket.join(socketGroupingKey);
     };
-
+    io.set('origins', origins);
     io.on('connection', function (socket) {
         newConnectionCallback(socket);
     });
@@ -27,13 +25,6 @@ exports.init = function (options) {
 
     return io;
 }
-
-exports.broadcast = function (eventType, data) {
-    //io.sockets.forEach(function (socket) {
-    //    socket.emit(eventType, data);
-    //});
-}
-
 
 Object.defineProperty(exports, 'io', {
     get: function () {
