@@ -8,18 +8,29 @@
 <body>
 
 	<script>
+		//enable recording SystemJS activity
 		System.trace = true;
-	</script>
+	</script> 
 
-	<div id="content"></div>
+	<div id="demo"></div>
 
 
 
 	<script>
+	//usual SystemJS entry point
+	
 		'use strict';
-    Promise.all([System['import']('Scripts/super-test.es.js')])
-		.then(function (modules) {
-			
+    Promise.all([
+		System['import']('automagic-systemjs-client'),
+		System['import']('Scripts/my-app.es.js')
+	])
+		.then(function (modules) {	
+			//recommended to initialise automagic here outside of a JavaScript file.
+			//prevents re-initialisation if it were to be part of a reloaded script
+			var automagic = modules[0];
+			automagic.baseUri = 'Scripts/';
+			automagic.port = 3912;
+			automagic.init();
 		 });
 	</script>
 
