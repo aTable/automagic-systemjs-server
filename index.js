@@ -10,7 +10,7 @@ function handler(req, res) {
 }
 
 exports.init = function (options) {
-    var port = options.port || 3000;
+    var port = options.port || 3912;
     var origins = options.origins || '*:*';
     var newConnectionCallback = options.newConnectionCallback || function (socket) {
         console.log('new connection', new Date());
