@@ -1,16 +1,31 @@
-# automagic
 A SystemJS hot module replacer to loads file changes <a target='_blank' href='http://i.imgur.com/2eKyLKf.gifv'>without full page refreshes.</a>
 
-###Instructions
-####Server
+#Usage
+##1. Install
 `npm install --save-dev automagic-systemjs-server`
 
+##2. Launch the server
 ```
 var automagic = require('automagic-systemjs-server');
 automagic.init(options);
 ```
+###init(options)
+####port
+socket.io server port to start on
 
+defaults `3912`
 
+####origins 
+socket.io CORS 
+
+default `'*:*'`
+
+####newConnectionCallback
+function invoked on a new connection
+
+default `console.log('...', new Date());`
+
+##3. Publish `fileChanged` event to clients
 ```
 gulp.watch(['*.js', '!node_modules/**'])
         .on('change', function (e) {
@@ -21,17 +36,9 @@ gulp.watch(['*.js', '!node_modules/**'])
         });
 ```
 
-####Client
-`jspm install npm:automagic-systemjs-client`
-
-`System.trace = true;`
-
-```
-import automagic from 'automagic-systemjs-client';
-automagic.baseUri = 'Scripts/';
-automagic.port = 3912;
-automagic.init();
-```
+To retrieve the`io` instance you can store it on initialisation `var io = automagic.init()` 
+or use the public getter `automagic.io`
 
 
-
+##Server setup complete!
+Continue with the <a href='https://github.com/aTable/automagic-systemjs-client'>automagic client</a>
