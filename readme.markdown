@@ -40,5 +40,5 @@ To retrieve the`io` instance you can store it on initialisation `var io = automa
 or use the public getter `automagic.io`
 
 
-##4. Server setup complete!
+##Server setup complete!
 Continue with the <a href='https://github.com/aTable/automagic-systemjs-client'>automagic client</a>
