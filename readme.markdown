@@ -4,10 +4,10 @@ A SystemJS hot module replacer to loads file changes <a target='_blank' href='ht
 #Usage
 ##Server
 
-###1 Install
+###1. Install
 `npm install --save-dev automagic-systemjs-server`
 
-###2 Launch the server
+###2. Launch the server
 ```
 var automagic = require('automagic-systemjs-server');
 automagic.init(options);
@@ -28,7 +28,7 @@ function invoked on a new connection
 
 default `console.log('...', new Date());`
 
-###3 Publish `fileChanged` event to clients
+###3. Publish `fileChanged` event to clients
 ```
 gulp.watch(['*.js', '!node_modules/**'])
         .on('change', function (e) {
@@ -46,10 +46,10 @@ or use the public getter `automagic.io`
 
 #Usage
 ##Client
-###1 Install 
+###1. Install 
 `jspm install npm:automagic-systemjs-client`
 
-###2 Load systemjs + configuration
+###2. Load systemjs + configuration
 ```
 <head>
 	<script src="jspm_packages/system.js" type="text/javascript"></script>
@@ -60,7 +60,7 @@ or use the public getter `automagic.io`
 </head>
 ```
 
-###3 Connect to the server
+###3. Connect to the server
 ```
 import automagic from 'automagic-systemjs-client';
 automagic.baseUri = 'Scripts/';
@@ -68,7 +68,7 @@ automagic.port = 3912;
 automagic.init();
 ```
 
-###4 automagic!
+###4. automagic!
 
 ###automagic
 ####baseUri
