@@ -15,6 +15,7 @@ exports.init = function (options) {
     var newConnectionCallback = options.newConnectionCallback || function (socket) {
         console.log('new connection', new Date());
     };
+    
     io.set('origins', origins);
     io.on('connection', function (socket) {
         newConnectionCallback(socket);
@@ -32,3 +33,4 @@ Object.defineProperty(exports, 'io', {
     }
 });
 
+exports.fileChanged = 'fileChanged';

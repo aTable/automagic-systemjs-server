@@ -1,6 +1,6 @@
 {
   "name": "automagic-systemjs-server",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A SystemJS hot module replacer to loads file changes without full page refreshes.",
   "main": "index.js",
   "scripts": {

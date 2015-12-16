@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "automagic-systemjs-server": "0.0.1",
+    "automagic-systemjs-server": "^1.0.12",
     "express": "^4.13.3",
     "gulp": "^3.9.0",
     "jspm": "^0.16.15",
