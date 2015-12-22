@@ -1,6 +1,8 @@
 A SystemJS hot module replacer to loads file changes <a target='_blank' href='http://i.imgur.com/2eKyLKf.gifv'>without full page refreshes.</a>
 
-#Usage
+
+#Usage [![Build Status](https://travis-ci.org/aTable/automagic-systemjs-server.svg)](https://travis-ci.org/aTable/automagic-systemjs-server)
+
 ##1. Install
 `npm install --save-dev automagic-systemjs-server`
 
