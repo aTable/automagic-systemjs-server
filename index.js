@@ -10,6 +10,10 @@ function handler(req, res) {
 }
 
 exports.init = function (options) {
+    if (typeof options === 'undefined') {
+        options = {};
+    }
+    
     var port = options.port || 3912;
     var origins = options.origins || '*:*';
     var newConnectionCallback = options.newConnectionCallback || function (socket) {
