@@ -25,14 +25,14 @@ function invoked on a new connection
 
 default `console.log('...', new Date());`
 
-##3. Publish `fileChanged` event to clients
+##3. Publish `automagic.fileChanged` event to clients
 ```
 gulp.watch(['*.js', '!node_modules/**'])
         .on('change', function (e) {
             var data = {
                 fileName: path.basename(e.path)
             };
-            io.emit('fileChanged', data);
+            io.emit(automagic.fileChanged, data);
         });
 ```
 
